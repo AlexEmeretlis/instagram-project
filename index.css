@@ -3,7 +3,7 @@ html, body {
     padding: 0;
     width: 375px;
     font-family: "Source Sans 3", sans-serif;
-    font-size: 13px 
+    font-size: 13px;
 }
 
 header {
@@ -38,8 +38,12 @@ header {
 
 }
 
-.font-small {
+ .username-info .font-small {
     font-size: 12px;
+}
+
+.font-small{
+    font-weight: 400;
 }
 
 .post-photo {
@@ -58,7 +62,22 @@ header {
 }
 
 .icons:hover {
-    opacity: 0.3;
+    opacity: 0.5;
     border: 1px solid black;
     border-radius: 50%;
+}
+
+.bold-text {
+    font-weight: bold;
+    margin-left: 10px;
+
+}
+
+.likes {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.comment {
+    margin-top: 5px;
 }
