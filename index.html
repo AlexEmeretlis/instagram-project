@@ -4,6 +4,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
         <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     </head>
     <body>
         <main>
@@ -13,12 +16,31 @@
             </header>
             <section>
                 <div class="post">
-                    <img src="images/avatar-vangogh.jpg" alt="post avatar of vanghogh">
-                    <h3>Vincent van Gogh</h3>
-                    <p>Zundert, Netherlands</p>
-                    <img src="images/post-vangogh.jpg" alt="portrait of Van Gogh">
+                    <div class="username-info">
+                        <div>
+                            <img class="user-avatar" src="images/avatar-vangogh.jpg" alt="post avatar of vangogh">
+                        </div>
+                        <div>
+                            <h3 class="username-name">Vincent van Gogh</h3>
+                            <p class="username-name font-small">Zudert, Netherlands</p>
+                        </div> 
+                    </div>
+                    <img class="post-photo" src="images/post-vangogh.jpg" alt="portrait of Van Gogh">
                 </div>
-
+            </section>
+                <div class="post-interactions">
+                    <div>
+                        <img class="icons" src="images/icon-heart.png" alt="heart icon">
+                    </div>
+                    <div>
+                        <img class="icons" src="images/icon-comment.png" alt="comment icon">
+                    </div>
+                    <div>
+                        <img class="icons" src="images/icon-dm.png" alt="direct message icon">
+                    </div>
+                </div>
+            <section>
+                
             </section>
         </main>
        <script src="index.js"></script> 

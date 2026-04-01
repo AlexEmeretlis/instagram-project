@@ -1,22 +1,65 @@
 html, body {
     margin: 0;
     padding: 0;
-    width: 570px;
+    width: 375px;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 13px 
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10px;
+    padding: 5px 10px;
+    border-bottom: 2px solid #C6C6C6;
 }
 
 .logo {
-    width: 100px;
+    width: 127px;
+
 }
 
 .user-avatar {
-    width: 32px;
-    height: 32px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
+
+.username-info {
+    display: flex;
+    justify-content: start;
+    align-items: center; 
+    padding: 10px;
+}
+
+.username-name {
+    margin: 0;
+    padding-left: 10px;
+
+}
+
+.font-small {
+    font-size: 12px;
+}
+
+.post-photo {
+    width: 100%
+}
+
+.post-interactions {
+    display: flex;
+    justify-content: start;
+    margin-top: 5px;
+}
+
+.icons {
+    width: 23px;
+    padding: 8px;;
+}
+
+.icons:hover {
+    opacity: 0.3;
+    background-color: orange;
+    border: 1px solid black;
     border-radius: 50%;
 }
