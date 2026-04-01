@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>oldham</title>
+        <title>Oldagram</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
         <link rel="stylesheet" href="index.css">
@@ -9,12 +9,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <main>
             <header>
                 <img src="images/logo.png" alt="oldham logo" class="logo">
                 <img src="images/user-avatar.png" alt="user avatar" class="user-avatar">
             </header>
-            <section>
+            <main>
                 <div class="post">
                     <div class="username-info">
                         <div>
@@ -25,9 +24,10 @@
                             <p class="username-name font-small">Zundert, Netherlands</p>
                         </div> 
                     </div>
-                    <img class="post-photo" src="images/post-vangogh.jpg" alt="portrait of Van Gogh">
+                    <img id="gogh-post" class="post-photo" src="images/post-vangogh.jpg" alt="portrait of Van Gogh">
                 </div>
-            </section>
+            </main>
+            <section>
                 <div class="post-interactions">
                     <div>
                         <img class="icons" src="images/icon-heart.png" alt="heart icon">
@@ -40,11 +40,13 @@
                     </div>
                 </div>
                 <p class="bold-text likes">21,492 likes</p>
-                <p class="bold-text comment">vincey1853<span class="font-small">took a few mushrooms lol</span></p>
-            <section>
-                
+                <p class="bold-text comment">vincey1853 <span class="font-small">took a few mushrooms lol</span></p>
+                <hr>
             </section>
-        </main>
+            <section id="js-test"></section>
        <script src="index.js"></script> 
+       <footer>
+            <h4>Solo Project from Scrimba <span class="my-name">Alex Emeretlis</span></h3>
+       </footer>
     </body>
 </html>

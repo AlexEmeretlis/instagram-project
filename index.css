@@ -1,9 +1,10 @@
 html, body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     width: 375px;
     font-family: "Source Sans 3", sans-serif;
     font-size: 13px;
+    background-image: linear-gradient(to bottom, white, #fff3b7);
 }
 
 header {
@@ -16,13 +17,13 @@ header {
 
 .logo {
     width: 127px;
-
 }
 
 .user-avatar {
     width: 34px;
     height: 34px;
     border-radius: 50%;
+    border: 2px solid #faa307;
 }
 
 .username-info {
@@ -80,4 +81,16 @@ header {
 
 .comment {
     margin-top: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px ;
+    border: 1px solid #C6C6C6;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.my-name {
+    display: block;
+    font-weight: 400;
 }
