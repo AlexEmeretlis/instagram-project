@@ -29,27 +29,27 @@ const posts = [
         likes: 152
     }
 ]
-
-
-jsTestEl.innerHTML = `
+let listHtml = ""
+for (let i = 0; i <posts.length; i++) {
+    listHtml += `
             <main>
                 <div class="post">
                     <div class="username-info">
                         <div>
-                            <img class="user-avatar" src="${posts[1].avatar}" alt="avatar of Gustave Courbet">
+                            <img class="user-avatar" src="${posts[i].avatar}" alt="avatar of ${posts[i].name}">
                         </div>
                         <div>
-                            <h3 class="username-name">${posts[1].name}</h3>
-                            <p class="username-name font-small">${posts[1].location}</p>
+                            <h3 class="username-name">${posts[i].name}</h3>
+                            <p class="username-name font-small">${posts[i].location}</p>
                         </div> 
                     </div>
-                    <img class="post-photo" src="${posts[1].post}" alt="portrait of Gustave Courbet">
+                    <img class="post-photo" src="${posts[i].post}" alt="portrait of ${posts[i].name}">
                 </div>
             </main>
             <section>
                 <div class="post-interactions">
                     <div>
-                        <img id="courbet-post" class="icons" src="images/icon-heart.png" alt="heart icon">
+                        <img class="icons like-icon" src="images/icon-heart.png" alt="heart icon">
                     </div>
                     <div>
                         <img class="icons" src="images/icon-comment.png" alt="comment icon">
@@ -58,15 +58,27 @@ jsTestEl.innerHTML = `
                         <img class="icons" src="images/icon-dm.png" alt="direct message icon">
                     </div>
                 </div>
-                <p id="courbet-likes" class="bold-text likes" >${posts[1].likes} likes</p>
-                <p class="bold-text comment">${posts[1].username} <span class="font-small">${posts[1].comment}</span></p>
+                <p id="post-likes-${i}" class="bold-text likes" >${posts[i].likes} likes</p>
+                <p class="bold-text comment">${posts[i].username} <span class="font-small">${posts[i].comment}</span></p>
             </section>`
+            
+ }
+        
+jsTestEl.innerHTML = listHtml
 
 
-const courbetPostEl = document.getElementById("courbet-post")
-const courbetLikesEl = document.getElementById("courbet-likes")
+const allHearts = document.querySelectorAll(".like-icon")
 
-courbetPostEl.addEventListener("click", function() {
-    posts[1].likes += 1
-    courbetLikesEl.textContent = `${posts[1].likes} likes`
-})
+for (let i = 0; i < allHearts.length; i++) {
+    const likesEl = document.getElementById(`post-likes-${i}`)
+    allHearts[i].addEventListener("click", function() {
+        posts[i].likes += 1
+        likesEl.textContent = `${posts[i].likes} likes`
+    })
+}
+
+
+
+
+
+
